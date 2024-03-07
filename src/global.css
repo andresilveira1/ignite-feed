@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --white: #ffffff;
+
+  --hue: 240;
+  --gray-100: hsl(var(--hue), 9%, 89%);
+  --gray-300: hsl(var(--hue), 7%, 78%);
+  --gray-400: hsl(var(--hue), 6%, 58%);
+  --gray-600: hsl(var(--hue), 6%, 21%);
+  --gray-700: hsl(var(--hue), 6%, 17%);
+  --gray-800: hsl(var(--hue), 6%, 13%);
+  --gray-900: hsl(var(--hue), 5%, 7%);
+
+  --green-500: hsl(162, 100%, 26%);
+}
+
+body {
+  color: var(--gray-300);
+
+  background: var(--gray-900);
+}
+
+body, input, textarea, button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+}
