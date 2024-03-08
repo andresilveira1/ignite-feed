@@ -133,3 +133,7 @@
 .commentForm > button:hover {
   background-color: var(--green-400);
 }
+
+.commentList {
+  margin-top: 3.2rem;
+}
