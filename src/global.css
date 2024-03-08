@@ -12,17 +12,25 @@
 
   --white: #ffffff;
 
-  --hue: 240;
-  --gray-100: hsl(var(--hue), 9%, 89%);
-  --gray-300: hsl(var(--hue), 7%, 78%);
-  --gray-400: hsl(var(--hue), 6%, 58%);
-  --gray-600: hsl(var(--hue), 6%, 21%);
-  --gray-700: hsl(var(--hue), 6%, 17%);
-  --gray-800: hsl(var(--hue), 6%, 13%);
-  --gray-900: hsl(var(--hue), 5%, 7%);
+  --hue-gray: 240;
+  --gray-100: hsl(var(--hue-gray), 9%, 89%);
+  --gray-300: hsl(var(--hue-gray), 7%, 78%);
+  --gray-400: hsl(var(--hue-gray), 6%, 58%);
+  --gray-600: hsl(var(--hue-gray), 6%, 21%);
+  --gray-700: hsl(var(--hue-gray), 6%, 17%);
+  --gray-800: hsl(var(--hue-gray), 6%, 13%);
+  --gray-900: hsl(var(--hue-gray), 5%, 7%);
 
-  --green-400: hsl(162, 100%, 35%);
-  --green-500: hsl(162, 100%, 26%);
+  --hue-green: 162;
+  --green-400: hsl(var(--hue-green), 100%, 35%);
+  --green-500: hsl(var(--hue-green), 100%, 26%);
+
+  --red-500: #f75a68;
+}
+
+:focus {
+  outline: transparent;
+  box-shadow: 0 0 0 2px var(--green-500);
 }
 
 body {
@@ -31,7 +39,10 @@ body {
   background: var(--gray-900);
 }
 
-body, input, textarea, button {
+body,
+input,
+textarea,
+button {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 1.6rem;
