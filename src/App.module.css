@@ -6,6 +6,12 @@
 
   display: grid;
   align-items: flex-start;
-  grid-template-columns: 25.6rem 1fr;
+  grid-template-columns: 1fr;
   gap: 3.2rem;
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    grid-template-columns: 25.6rem 1fr;
+  }
 }
